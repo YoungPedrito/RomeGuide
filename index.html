@@ -3,32 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esperienze ALOE (Embed Notion)</title>
+  <title>Esperienze embed ALOE</title>
   <style>
     html, body {
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       background-color: #fff;
-      height: 100%; width: 100%;
+      height: 100%;
+      width: 100%;
       overflow: hidden;
       font-family: system-ui, sans-serif;
     }
-    /* Contenitore wrapper per gestire altezza fissa */
-    .embed-wrapper {
+
+    #widget-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       width: 100%;
-      height: 750px; /* altezza consigliata per Notion */
-      display: block;
-      overflow: hidden;
+      height: 100vh;
       box-sizing: border-box;
+      overflow: hidden;
+      padding: 0;
     }
+
     aloe-collection {
       display: block;
-      width: 100%; height: 100%;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="embed-wrapper">
-    <aloe-collection uuid="1f06bb0c‑f650‑6abc‑91fb‑0645365046d5" language="it"></aloe-collection>
+  <div id="widget-container">
+    <aloe-collection uuid="1f06bb0c-f650-6abc-91fb-0645365046d5" language="it"></aloe-collection>
   </div>
   <script src="https://app.aloesuite.com/widget.js"></script>
 </body>

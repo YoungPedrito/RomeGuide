@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esperienze embed ALOE - versione Notion</title>
+  <title>Esperienze ALOE – Notion Embed</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: white;
-      overflow: hidden;
+      background-color: white;
       height: 100%;
       width: 100%;
+      overflow: hidden;
     }
 
-    #wrapper {
+    .embed-wrapper {
       width: 100%;
-      height: 700px; /* Altezza fissa consigliata per l’embed su Notion */
-      overflow: hidden;
+      height: 750px; /* Altezza fissa per Notion, puoi regolarla */
       box-sizing: border-box;
+      overflow: hidden;
     }
 
     aloe-collection {
@@ -29,7 +29,7 @@
   </style>
 </head>
 <body>
-  <div id="wrapper">
+  <div class="embed-wrapper">
     <aloe-collection uuid="1f06bb0c-f650-6abc-91fb-0645365046d5" language="it"></aloe-collection>
   </div>
   <script src="https://app.aloesuite.com/widget.js"></script>
